@@ -6,7 +6,7 @@
     "email": "admin@rizkiandrianto.com",
     "phone": "081 222 606 555",
     "website": "http://rizkiandrianto.com",
-    "summary": "",
+    "summary": "Detail-oriented Web and Graphic Designer with more than three years of experience as a Web Maintenance & Developing, Content Writing, Web Designer specialist and Graphic Designer. Skilled at operating web and graphic design software. Excellent written and oral communication skills.",
     "location": {
       "address": "Pasar Minggu",
       "postalCode": "12510",
@@ -29,16 +29,26 @@
         "network": "facebook",
         "username": "rizkiandrianto",
         "url": ""
+      },
+      {
+        "network": "linkedin",
+        "username": "rizkiandrianto",
+        "url": ""
+      },
+      {
+        "network": "instagram",
+        "username": "rizkiandrianto",
+        "url": ""
       }
     ]
   },
   "work": [
     {
       "company": "PT. Balina Internet Marketing",
-      "position": "Web / Graphic Designer",
+      "position": "Freelance Web / Graphic Designer",
       "website": "http://thebalina.com",
       "startDate": "2010-10-01",
-      "endDate": "",
+      "endDate": "2014-12-01",
       "summary": "",
       "highlights": [
         "Build & Modify Website with Wordpress",
@@ -87,6 +97,15 @@
   "volunteer": [],
   "education": [
     {
+      "institution": "SMK Negeri 6 Jakarta",
+      "area": "Multimedia",
+      "studyType": "",
+      "startDate": "2007-07-01",
+      "endDate": "2010-05-01",
+      "gpa": "",
+      "courses": []
+    },
+    {
       "institution": "Gunadarma University",
       "area": "Computer Science",
       "studyType": "Bachelor",
@@ -117,31 +136,58 @@
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Advance",
+      "name": "HTML5",
+      "level": "85",
       "keywords": [
         "HTML5",
-        "CSS3",
-        "Javascript / JQuery",
-        "PHP"
+        "HTML"
       ]
     },
     {
-      "name": "Graphic",
-      "level": "Intermediate",
+      "name": "CSS3",
+      "level": "90",
       "keywords": [
-        "Photoshop",
-        "Illustrator"
+        "CSS",
+        "CSS3"
       ]
     },
     {
-      "name": "Video",
-      "level": "Beginner",
+      "name": "Javascript",
+      "level": "80",
       "keywords": [
-        "After Effect",
-        "Premiere Pro",
-        "Camtasia"
+        "JQuery",
+        "AJAX",
+        "Angular JS",
+        "Node JS"
       ]
+    },
+    {
+      "name": "PHP",
+      "level": "70",
+      "keywords": []
+    },
+    {
+      "name": "JAVA",
+      "level": "40",
+      "keywords": []
+    },
+    {
+      "name": "C",
+      "level": "50",
+      "keywords": [
+        "C++",
+        "C"
+      ]
+    },
+    {
+      "name": "Photoshop",
+      "level": "70",
+      "keywords": []
+    },
+    {
+      "name": "Illustrator",
+      "level": "75",
+      "keywords": []
     }
   ],
   "languages": [
