@@ -33,9 +33,8 @@ input {
 	border-right: 1px solid #ccc;
 	bottom: 0;
 	left: -0;
-	position: absolute;
 	top: 0;
-	width: 480px;
+	width: 100%;
 }
 #sidebar #panel {
 	overflow: hidden;
@@ -47,7 +46,7 @@ input {
 	height: 170px;
 	padding: 16px 20px 0;
 	position: relative;
-	width: 280px;
+	width: 100%;
 }
 #sidebar .actions {
 	overflow: hidden;
@@ -107,7 +106,6 @@ input {
 	bottom: 0;
 	left: 0;
 	opacity: 0.0;
-	position: absolute;
 	right: 0;
 	top: 169px;
 	transition: opacity .5s;
@@ -127,8 +125,13 @@ input {
 #sidebar .tse-content {
 	float: right;
 	padding: 20px 20px 40px;
-	width: 280px;
+	width: 100%;
 }
+
+.tse-scrollable .tse-scroll-content {
+	height: auto !important;
+}
+
 #themes-list .item {
 	display: block;
 	padding: 10px 0;
@@ -162,7 +165,7 @@ input {
 	bottom: 0;
 	left: 480px;
 	overflow: hidden;
-	position: absolute;
+	/* position: absolute; */
 	right: 0;
 	top: 0;
 }
@@ -172,6 +175,17 @@ input {
 	position: absolute;
 	width: 100%;
 }
+#previewModal .modal-dialog {
+	width: 100%;
+	margin: 0 auto;
+}
+#previewModal .modal-content {
+	height: 100vh;
+}
+.tse-scrollable .tse-scroll-content {
+	width: 100% !important;
+}
+
 #preview.scroll #overlay {
 	display: block;
 }

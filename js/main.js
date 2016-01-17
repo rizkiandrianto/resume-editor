@@ -49,16 +49,30 @@ jQuery(document).ready(function($) {
 		})();
 	}
 
+	function writeToFile(d1, d2){
+	    var fso = new ActiveXObject("Scripting.FileSystemObject");
+	    var fh = fso.OpenTextFile("resume.txt", 8, false, 0);
+	    fh.WriteLine(d1);
+	    fh.Close();
+	}
+
 	enableTSEplugin();
 	enableCSStransitions();
 
 	$("#export").on("click", function() {
 		var data = form.data("resume");
-		download(JSON.stringify(data, null, "  "), "resume.json", "text/plain");
+		//download(JSON.stringify(data, null, "  "), "resume.json", "text/plain");
+		console.log(JSON.stringify(data, null, "  "));
+		writeToFile(data);
 	});
 	$("#export").tooltip({
 		container: "body"
 	});
+
+	$('#myTabs a').click(function (e) {
+	  e.preventDefault()
+	  $(this).tab('show')
+	})
 
 
 	$("#reset").on("click", function() {
@@ -136,6 +150,10 @@ jQuery(document).ready(function($) {
 		self.addClass("active").siblings().removeClass("active");
 		jsonEditor.toggleClass("show", type == "json");
 	});
+
+	$('#import').change(function(event){
+		console.log(event.target.result)
+	})
 });
 
 function reset() {
