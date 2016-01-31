@@ -43,7 +43,7 @@ input {
 }
 #sidebar #panel .inner {
 	float: right;
-	height: 170px;
+	height: 184px;
 	padding: 16px 20px 0;
 	position: relative;
 	width: 100%;
@@ -90,9 +90,9 @@ input {
 }
 #sidebar .view {
 	font-size: 11px;
-	position: absolute;
 	bottom: 8px;
 	right : 10px;
+	margin: 10px;
 }
 #sidebar .view a {
 	margin-right: 10px;
@@ -102,7 +102,7 @@ input {
 }
 #sidebar .tab-pane {
 	background: #fafafa;
-	border-top: 1px solid #ddd;
+	border-top: none;
 	bottom: 0;
 	left: 0;
 	opacity: 0.0;
@@ -168,6 +168,7 @@ input {
 	/* position: absolute; */
 	right: 0;
 	top: 0;
+	height: 100%;
 }
 #preview #overlay {
 	display: none;
@@ -178,6 +179,9 @@ input {
 #previewModal .modal-dialog {
 	width: 100%;
 	margin: 0 auto;
+}
+#previewModal .modal-body {
+	height: calc(100vh - 130px);
 }
 #previewModal .modal-content {
 	height: 100vh;

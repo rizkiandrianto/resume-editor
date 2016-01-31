@@ -1,3 +1,4 @@
-<div class="object">
+<!-- <div class="object">
 	{{{html}}}
 </div>
+ -->

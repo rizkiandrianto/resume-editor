@@ -49,21 +49,13 @@ jQuery(document).ready(function($) {
 		})();
 	}
 
-	function writeToFile(d1, d2){
-	    var fso = new ActiveXObject("Scripting.FileSystemObject");
-	    var fh = fso.OpenTextFile("resume.txt", 8, false, 0);
-	    fh.WriteLine(d1);
-	    fh.Close();
-	}
-
 	enableTSEplugin();
 	enableCSStransitions();
 
 	$("#export").on("click", function() {
 		var data = form.data("resume");
-		//download(JSON.stringify(data, null, "  "), "resume.json", "text/plain");
+		download(JSON.stringify(data, null, "  "), "resume.json", "text/plain");
 		console.log(JSON.stringify(data, null, "  "));
-		writeToFile(data);
 	});
 	$("#export").tooltip({
 		container: "body"
@@ -85,6 +77,27 @@ jQuery(document).ready(function($) {
 		if (confirm("Are you sure?")) {
 			clear();
 		}
+	});
+
+	$('#btn-import').click(function(){
+		$('#import-file').click();		
+	})
+
+	$('#import-file').change(function(event){
+		var tmppath = URL.createObjectURL(event.target.files[0]);
+
+		$.getJSON(tmppath, function(data) {
+			builder.setFormValues(data);
+			console.log(data);
+		});
+	})
+
+	$("#json2").on("click", function() {
+		var form2 = $("#form2");
+		builder2 = new Builder(form2);
+		var data2 = builder2.getFormValues();
+		form2.data("resume", data2);
+		console.log(JSON.stringify(data2, null, "  "));
 	});
 
 	var tabs = $("#sidebar .tabs a");
@@ -159,6 +172,7 @@ jQuery(document).ready(function($) {
 function reset() {
 	$.getJSON("json/resume.json", function(data) {
 		builder.setFormValues(data);
+		console.log(data)
 	});
 }
 

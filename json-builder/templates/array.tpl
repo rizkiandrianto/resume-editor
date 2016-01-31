@@ -1,4 +1,4 @@
-<div class="array" data-name="{{name}}">
+<!-- <div class="array" data-name="{{name}}">
 	<div class="title">
 		{{title}}
 	</div>
@@ -12,4 +12,4 @@
 	<button class="remove">
 		Remove
 	</button>
-</div>
+</div> -->
